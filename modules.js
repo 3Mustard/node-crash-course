@@ -9,3 +9,9 @@ console.log(itzy);
 
 // console.log(xyz.cats);
 // console.log(xyz.itzy);
+
+// core module
+// returns an object with information about operatin system
+const os = require('os');
+
+console.log(os.platform(), os.homedir());
