@@ -1,4 +1,4 @@
-// Global object
+// Global object, no DOM object
 
 // console.log(global);
 
@@ -17,5 +17,5 @@
 // }, 1000);
 
 //Logs the directory we are in and the current filepath
-console.log(__dirname);
-console.log(__filename);
+// console.log(__dirname);
+// console.log(__filename);
