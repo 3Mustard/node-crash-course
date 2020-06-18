@@ -14,13 +14,20 @@ const fs = require('fs');
 //     console.log('file was written');
 // });
 
-// directories
+// directories, creating and removing them.
 if ( !fs.existsSync('./assets')) {
-    fs.mkdir('./assets', (err) => {
+    fs.mkdir('./assets', (error) => {
         if (err) {
-            console.log(err);
+            console.log(error);
         }
         console.log('folder created');
+    });
+} else {
+    fs.rmdir('./assets', (error) => {
+        if (error) {
+            console.log(error);
+        }
+        console.log('folder deleted');
     });
 }
 
