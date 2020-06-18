@@ -9,8 +9,10 @@ const fs = require('fs');
 // });
 // console.log('last line?');
 
-// writing files
-fs.writeFile('./docs/blog1.txt', )
+// writing files, if the document doesnt exist it will be created.
+// fs.writeFile('./docs/blog1.txt', 'Meow', () => {
+//     console.log('file was written');
+// });
 
 // directories
 
