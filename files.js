@@ -17,7 +17,7 @@ const fs = require('fs');
 // directories, creating and removing them.
 if ( !fs.existsSync('./assets')) {
     fs.mkdir('./assets', (error) => {
-        if (err) {
+        if (error) {
             console.log(error);
         }
         console.log('folder created');
